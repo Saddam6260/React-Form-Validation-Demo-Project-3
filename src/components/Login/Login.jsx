@@ -21,10 +21,6 @@ const Login = (props) => {
     props.isLogin([enteredEmail, enteredPassword, isValid]);
   };
 
-  const onLoginHandler = () => {
-    setIsValid(true);
-  }
-
   return (
     <section className="login">
       <form action="" onSubmit={onSubmitHandler} className="form">
@@ -47,7 +43,7 @@ const Login = (props) => {
           />
         </div>
         <div>
-          <Button type="submit" className="btn" onClick={onLoginHandler}>
+          <Button type="submit" className="btn" onClick={props.onLogin}>
             Log In
           </Button>
         </div>

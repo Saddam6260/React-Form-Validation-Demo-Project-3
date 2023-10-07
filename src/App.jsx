@@ -5,7 +5,11 @@ import Login from './components/Login/Login'
 import Home from './components/Home/Home'
 
 function App() {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const isLogInHandler = () => {
+    setIsLoggedIn(true)
+  }
 
   const isLogOutHandler = () => {
     setIsLoggedIn(false);
@@ -13,8 +17,10 @@ function App() {
   return (
     <React.Fragment>
       <MainHeader isLogin={isLoggedIn} isLogOutHandler={isLogOutHandler}/>
-      <Home/>
-      <Login/>
+      <main>
+        {isLoggedIn && <Home/>}
+        {!isLoggedIn && <Login onLogin={isLogInHandler}/>}
+      </main>
     </React.Fragment>
   )
 }
