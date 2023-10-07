@@ -1,13 +1,13 @@
 import "./MainHeaderNavber.css"
 import Button from "../UI/Button/Button";
 
-const MainHeaderNavber = () => {
+const MainHeaderNavber = (props) => {
   return (
     <ul>
       <li>Home</li>
       <li>Service</li>
       <li>
-        <Button type="submit">Log Out</Button>
+        <Button type="submit" onClick={props.isLogout}>Log Out</Button>
       </li>
     </ul>
   );

@@ -1,11 +1,11 @@
 import "./MainHeader.css";
 import MainHeaderNavber from "./MainHeaderNavber";
 
-const MainHeader = () => {
+const MainHeader = (props) => {
   return (
     <header>
         <h2>Form Validation</h2>
-        <MainHeaderNavber/>
+        {props.isLogin && <MainHeaderNavber isLogout={props.isLogOutHandler}/>}
     </header>
   );
 };
