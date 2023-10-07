@@ -5,6 +5,8 @@
     margin: auto;
     margin-top: 40px;
     border-radius: 5px;
+}
+.login .form{
     display: flex;
     flex-flow: column;
     row-gap: 10px;
@@ -13,6 +15,7 @@
     display: flex;
     flex-flow: column;
     align-items: start;
+    row-gap: 5px;
 }
 .login div input{
     width: 100%;
