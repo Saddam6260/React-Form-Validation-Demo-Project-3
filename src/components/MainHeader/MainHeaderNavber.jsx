@@ -5,6 +5,7 @@ const MainHeaderNavber = (props) => {
   return (
     <ul>
       <li>Home</li>
+      <li>About</li>
       <li>Service</li>
       <li>
         <Button type="submit" onClick={props.isLogout}>Log Out</Button>
