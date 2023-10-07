@@ -1,11 +1,12 @@
-import React, { useState } from 'react'
+import React, {} from 'react'
+import MainHeader from './components/MainHeader/MainHeader'
 import './App.css'
 
 function App() {
 
   return (
     <React.Fragment>
-      <h2>Hellow Bangladesh</h2>
+      <MainHeader/>
     </React.Fragment>
   )
 }
