@@ -1,13 +1,13 @@
-import "./MainHeader.css"
-import MainHeaderNavber from "./MainHeaderNavber"
+import "./MainHeader.css";
+import MainHeaderNavber from "./MainHeaderNavber";
 
 const MainHeader = () => {
-    return(
-        <div>
-            <h2>Hellow Man</h2>
-            <MainHeaderNavber/>
-        </div>
-    )
-}
+  return (
+    <header>
+        <h2>Form Validation</h2>
+        <MainHeaderNavber/>
+    </header>
+  );
+};
 
-export default MainHeader
+export default MainHeader;

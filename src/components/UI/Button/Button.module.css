@@ -1,0 +1,10 @@
+.button{
+    padding: 5px 15px;
+    background-color: var(--skyBlue);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #bde0fe;
+}

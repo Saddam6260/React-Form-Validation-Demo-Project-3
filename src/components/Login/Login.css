@@ -1,0 +1,31 @@
+.login{
+    max-width: 450px;
+    background-color: var(--magenda);
+    padding: 20px 15px;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+    row-gap: 10px;
+}
+.login div{
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+}
+.login div input{
+    width: 100%;
+    padding: 7px 5px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+.login div input:focus{
+    background-color: var(--skyBlue);
+}
+.login div:nth-child(3) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
